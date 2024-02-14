@@ -57,6 +57,6 @@ def data_cleaning(df):
 
 df_names=['TVBS', '東森', '三立', '民視', '中視', '年代', '中天', '公視', '台視']
 for name in df_names:
-    df=pd.read_csv('C:/Users/blues/Desktop/Projects/2023TWPresidentialDebateAnalysis/All_CSV/raw_data/'+name+'.csv')
+    df=pd.read_csv('C:/Users/blues/Desktop/Projects/2024TWPresidentialDebateAnalysis/All_CSV/raw_data/'+name+'.csv')
     cleaned_file=data_cleaning(df)
-    cleaned_file.to_csv('C:/Users/blues/Desktop/Projects/2023TWPresidentialDebateAnalysis/All_CSV/clean_data/'+name+'.csv', index=False, encoding='utf_8_sig')
+    cleaned_file.to_csv('C:/Users/blues/Desktop/Projects/2024TWPresidentialDebateAnalysis/All_CSV/clean_data/'+name+'.csv', index=False, encoding='utf_8_sig')
